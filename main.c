@@ -13,9 +13,11 @@
 static mlx_image_t* image;
 
 typedef struct s_data {
-	int h_size;
+	int char_h_size;
+	int int_h_size;
 	int v_size;
-	int** map;
+	int** map_ints;
+	char** map_chars;
 } t_data;
 
 // -----------------------------------------------------------------------------
@@ -58,7 +60,7 @@ void ft_hook(void* param)
 		image->instances[0].x += 5;
 }
 
-int measure_map_h_size(char *buf)
+int ft_measure_map_v_size(char *buf)
 {
 	int counter;
 
@@ -72,15 +74,15 @@ int measure_map_h_size(char *buf)
 	return (counter + 1);
 }
 
-int measure_map_v_size(char *buf)
-{
-	int i;
-
-	i = 0;
-	while (buf[i] != '\n')
-		i++;
-	return (*buf);
-}
+//int measure_map_h_size(char *buf)
+//{
+//	int i;
+//
+//	i = 0;
+//	while (buf[i] != '\n')
+//		i++;
+//	return (*buf);
+//}
 
 int	ft_word_count_first_line(char *str, char c)
 {
@@ -103,43 +105,166 @@ int	ft_word_count_first_line(char *str, char c)
 	return (i);
 }
 
-int **allocate_map(t_data data)
+int	ft_word_count(char *str, char c)
+{
+	int	i;
+	int	trigger;
+
+	i = 0;
+	trigger = 0;
+	while (*str)
+	{
+		if (*str != c && trigger == 0)
+		{
+			trigger = 1;
+			i++;
+		}
+		else if (*str == c)
+			trigger = 0;
+		str++;
+	}
+	return (i);
+}
+
+void	clean_ptrs(char **double_ptr)
+{
+	char	**tmp;
+
+	tmp = double_ptr;
+	while (*tmp)
+	{
+		free(*tmp);
+		tmp++;
+	}
+	free(double_ptr);
+}
+
+
+
+int **allocate_map_ints(t_data fdf)
 {
 	int i;
+	int y;
+	char **arr;
 
-	i = data.v_size;
-	data.map = (int **)malloc(data.v_size * sizeof(int*));
+	i = 0;
+	y = 0;
+
+	fdf.map_ints = (int **)malloc(fdf.v_size * sizeof(int*));
 //		if (!data.map)
 //		{
 //			free(data.map);
 //			return ;
 //		}
-	while (i != data.v_size)
+
+	while (i != fdf.v_size)
 	{
-		data.map[i] = (int *)malloc(data.h_size * sizeof(int));
-//		if (!data.map[i])
-//		{
-//			free(data.map[i]);
-//			return ;
-//		}
+		y = 0;
+		arr = ft_split(fdf.map_chars[i], ' ');
+
+		printf("Arr is %s\n", arr[0]);
+		printf("Arr is %s\n", arr[1]);
+		printf("Arr is %s\n", arr[2]);
+		printf("Arr is %s\n", arr[3]);
+
+		fdf.map_ints[i] = (int *)malloc(ft_word_count(fdf.map_chars[i], ' ') * sizeof(int));
+		fdf.int_h_size = ft_word_count(fdf.map_chars[i], ' ');
+		while (arr[y] != NULL)
+		{
+			fdf.map_ints[i][y] = ft_atoi(arr[y]);
+			printf("fdf.map_ints[i][y] %d\n", fdf.map_ints[i][y]);
+			y++;
+		}
+		clean_ptrs(arr);
 		i++;
 	}
-	return (data.map);
+	return (fdf.map_ints);
 }
 
-void ft_free_2d_int_arr(int **arr, int h, int v)
+void ft_free_2d_int_arr(int **arr, int v)
 {
 	int i;
 
 	i = 0;
-	while (i > v) {
-		free(arr[v]);
+//	size_t arr_len = arr[0] /sizeof(int)
+	while (i < v)
+	{
+		free(arr[i]);
 		i++;
 	}
-
 	free(arr);
 	//return (NULL);
 }
+
+char **allocate_map_chars(char *str, t_data fdf)
+{
+	char **arr;
+	int len;
+	int start;
+	int rows;
+	arr = (char **) malloc((fdf.v_size + 1) * sizeof(char *));
+	if (!arr)
+		return (NULL);
+	start = 0;
+	len = 0;
+	rows = 0;
+	while (rows != fdf.v_size + 1) // ||
+	{
+		while (str[len] != '\n')
+		{
+			len++;
+		}
+		arr[rows] = ft_substr(str, start, len - start);
+		printf("String is %s\n", arr[rows]);
+		printf("Start is %d\n", start);
+		printf("Len is %d\n", len);
+		printf("Rows is %d\n", rows);
+		printf("FDF.v_size is %d\n", fdf.v_size);
+		start = len + 1;
+		rows++;
+		len++;
+	}
+	arr[rows] = NULL;
+	return (arr);
+}
+
+void	print_char2d_arr(char **double_ptr)
+{
+	int i = 0;
+
+	while (double_ptr[i][0] != '\0')
+	{
+		printf("Line %d contains %s\n", i, double_ptr[i]);
+		i++;
+	}
+}
+
+void	print_int2d_arr(int **double_ptr, int rows, int columns)
+{
+//	int rows = 3;
+//	int columns = 4;
+	int rows_c = 0;
+	int columns_c = 0;
+
+	printf("2d int array contains\n");
+
+	while (rows_c != rows)
+	{
+		columns_c = 0;
+		while (columns_c != columns)
+		{
+			printf("%d ", double_ptr[rows_c][columns_c]);
+			columns_c++;
+		}
+		printf("\n");
+
+		rows_c++;
+	}
+}
+
+
+
+
 //void free_int_arr(t_data data)
 //{
 //	datatype size = sizeof(data) / sizeof(array_name[index]);
@@ -181,16 +306,30 @@ int32_t	main(int32_t argc, const char* argv[])
 	buf = retrieve_buf(argv[1]);
 	printf("%s", buf);
 
-	char *test_str = "1 2 5 6 \n 1 2 4 5 \n 2 4 6 7 \0";
+	char *test_str = "1 2 5 6\n7 8 9 10\n11 12 13 14";
 
-	fdf.h_size = measure_map_h_size(test_str);
-	fdf.v_size = ft_word_count_first_line(test_str,' ');
-	fdf.map = allocate_map(fdf);
+	fdf.v_size = ft_measure_map_v_size(test_str);
+	fdf.char_h_size = ft_word_count_first_line(test_str,' ');
+	fdf.map_chars = allocate_map_chars(test_str, fdf);
+	fdf.map_ints = allocate_map_ints(fdf);
 
-	printf("H_size is %d\n", fdf.h_size);
+
+
+	printf("H_size is %d\n", fdf.char_h_size);
 	printf("V_size is %d\n", fdf.v_size);
 
-	ft_free_2d_int_arr(fdf.map, fdf.h_size, fdf.v_size);
+	print_char2d_arr(fdf.map_chars);
+	print_int2d_arr(fdf.map_ints, 3, 4);
+
+//	print_int2d_arr(fdf.map_ints);
+
+
+
+	clean_ptrs(fdf.map_chars);
+
+//	= ft_parse_string_to_2d_char_arr(char *str);
+
+	ft_free_2d_int_arr(fdf.map_ints, fdf.v_size);
 
 
 //	free_int_arr(data);
