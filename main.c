@@ -52,22 +52,39 @@ void ft_hook(void* param)
 		image->instances[0].x += 5;
 }
 
+char	*retrive_buf(const char *arg1)
+{
+	size_t	rd;
+	int fd;
+	char *buf;
+	char *buf2;
+	char	*path;
 
+	buf = (char *) malloc(10000);
+	path = "./maps/";
+	path = ft_strjoin(path, arg1);
+	fd = open(path, O_RDONLY);
+	rd = read(fd, buf, 10000);
+	buf2 = ft_strjoin(buf, "\0");
+	free(path);
+	free(buf);
+	return (buf2);
+}
 // -----------------------------------------------------------------------------
 
-int32_t main(int32_t argc, const char* argv[])
+int32_t	main(int32_t argc, const char* argv[])
 {
+	if(argc != 2)
+	{
+		write(2, "error: you need a valid map name\n", 33);
+		return (0);
+	}
 	mlx_t* mlx;
-	size_t rd;
-	char buf[5000];
-	char *path ="./maps/";
-	path = ft_strjoin(path, argv[1]);
-	int fd;
-	fd = open(path, O_RDONLY);
-	rd = read(fd, buf, 1000);
-	printf("%s\n", buf);
+	char *buf;
+	buf = retrive_buf(argv[1]);
+	printf("%s", buf);
 
-	// Gotta error check this stuff
+	 Gotta error check this stuff
 	if (!(mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
 	{
 		puts(mlx_strerror(mlx_errno));
@@ -85,12 +102,12 @@ int32_t main(int32_t argc, const char* argv[])
 		puts(mlx_strerror(mlx_errno));
 		return(EXIT_FAILURE);
 	}
-	
+
 	mlx_loop_hook(mlx, ft_randomize, mlx);
 	mlx_loop_hook(mlx, ft_hook, mlx);
 
 	mlx_loop(mlx);
 	mlx_terminate(mlx);
-	//free(str);
+	free(buf);
 	return (EXIT_SUCCESS);
 }
