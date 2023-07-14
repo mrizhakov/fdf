@@ -12,7 +12,7 @@
 
 static mlx_image_t* image;
 
-typedef struct data {
+typedef struct s_data {
 	int h_size;
 	int v_size;
 	int** map;
@@ -127,6 +127,19 @@ int **allocate_map(t_data data)
 	return (data.map);
 }
 
+void ft_free_2d_int_arr(int **arr, int h, int v)
+{
+	int i;
+
+	i = 0;
+	while (i > v) {
+		free(arr[v]);
+		i++;
+	}
+
+	free(arr);
+	//return (NULL);
+}
 //void free_int_arr(t_data data)
 //{
 //	datatype size = sizeof(data) / sizeof(array_name[index]);
@@ -135,13 +148,12 @@ int **allocate_map(t_data data)
 
 // -----------------------------------------------------------------------------
 
-int32_t main(int32_t argc, const char* argv[])
-char	*retrive_buf(const char *arg1)
+char	*retrieve_buf(const char *arg1)
 {
 	size_t	rd;
-	int fd;
-	char *buf;
-	char *buf2;
+	int 	fd;
+	char 	*buf;
+	char 	*buf2;
 	char	*path;
 
 	buf = (char *) malloc(10000);
@@ -165,10 +177,25 @@ int32_t	main(int32_t argc, const char* argv[])
 	}
 	mlx_t* mlx;
 	char *buf;
-	buf = retrive_buf(argv[1]);
+	t_data fdf;
+	buf = retrieve_buf(argv[1]);
 	printf("%s", buf);
 
-	 Gotta error check this stuff
+	char *test_str = "1 2 5 6 \n 1 2 4 5 \n 2 4 6 7 \0";
+
+	fdf.h_size = measure_map_h_size(test_str);
+	fdf.v_size = ft_word_count_first_line(test_str,' ');
+	fdf.map = allocate_map(fdf);
+
+	printf("H_size is %d\n", fdf.h_size);
+	printf("V_size is %d\n", fdf.v_size);
+
+	ft_free_2d_int_arr(fdf.map, fdf.h_size, fdf.v_size);
+
+
+//	free_int_arr(data);
+
+	// Gotta error check this stuff
 	if (!(mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
 	{
 		puts(mlx_strerror(mlx_errno));
