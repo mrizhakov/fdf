@@ -61,11 +61,11 @@ int32_t main(int32_t argc, const char* argv[])
 	size_t rd;
 	char buf[5000];
 	char *path ="./maps/";
-	printf("%s\n", path);
 	path = ft_strjoin(path, argv[1]);
 	int fd;
 	fd = open(path, O_RDONLY);
-	printf("%d\n", fd);
+	rd = read(fd, buf, 1000);
+	printf("%s\n", buf);
 
 	// Gotta error check this stuff
 	if (!(mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
