@@ -136,39 +136,39 @@ int **allocate_map(t_data data)
 // -----------------------------------------------------------------------------
 
 int32_t main(int32_t argc, const char* argv[])
+char	*retrive_buf(const char *arg1)
 {
-	mlx_t* mlx;
-	size_t rd;
-	char buf[5000];
-	char *path ="./maps/";
-	t_data data;
-	path = ft_strjoin(path, argv[1]);
+	size_t	rd;
 	int fd;
+	char *buf;
+	char *buf2;
+	char	*path;
+
+	buf = (char *) malloc(10000);
+	path = "./maps/";
+	path = ft_strjoin(path, arg1);
 	fd = open(path, O_RDONLY);
-	rd = read(fd, buf, 1000);
-	printf("%s\n", buf);
+	rd = read(fd, buf, 10000);
+	buf2 = ft_strjoin(buf, "\0");
+	free(path);
+	free(buf);
+	return (buf2);
+}
+// -----------------------------------------------------------------------------
 
-	char *test_str = "1 2 5 6 \n 1 2 4 5 \n 2 4 6 7 \0";
+int32_t	main(int32_t argc, const char* argv[])
+{
+	if(argc != 2)
+	{
+		write(2, "error: you need a valid map name\n", 33);
+		return (0);
+	}
+	mlx_t* mlx;
+	char *buf;
+	buf = retrive_buf(argv[1]);
+	printf("%s", buf);
 
-	data.h_size = measure_map_h_size(test_str);
-	data.v_size = ft_word_count_first_line(test_str,' ');
-	data.map = allocate_map(data);
-//
-//	while
-	printf("H_size is %d\n", data.h_size);
-	printf("V_size is %d\n", data.v_size);
-
-//	free_int_arr(data);
-
-
-
-
-
-
-
-
-
-	// Gotta error check this stuff
+	 Gotta error check this stuff
 	if (!(mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
 	{
 		puts(mlx_strerror(mlx_errno));
@@ -186,12 +186,12 @@ int32_t main(int32_t argc, const char* argv[])
 		puts(mlx_strerror(mlx_errno));
 		return(EXIT_FAILURE);
 	}
-	
+
 	mlx_loop_hook(mlx, ft_randomize, mlx);
 	mlx_loop_hook(mlx, ft_hook, mlx);
 
 	mlx_loop(mlx);
 	mlx_terminate(mlx);
-	//free(str);
+	free(buf);
 	return (EXIT_SUCCESS);
 }
