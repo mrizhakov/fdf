@@ -17,16 +17,6 @@
 
 static	mlx_image_t	*image;
 
-typedef struct s_window{
-	void	*mlx;
-	void	*win;
-	void	*img;
-	int		*data;
-	int		bpp;
-	int		size_line;
-	int		endian;
-}t_window;
-
 // -----------------------------------------------------------------------------
 
 int32_t	ft_pixel(int32_t r, int32_t g, int32_t b, int32_t a)
@@ -34,22 +24,63 @@ int32_t	ft_pixel(int32_t r, int32_t g, int32_t b, int32_t a)
 	return (r << 24 | g << 16 | b << 8 | a);
 }
 
-void	ft_randomize(void	*param)
+void	ft_put_pixel(int32_t x, int32_t y, long color)
 {
-	for (int32_t i = 0; i < image->width; ++i)
+	mlx_put_pixel(image, x, y, color);
+}
+
+void	ft_put_line(int32_t x, int32_t y, int32_t x_end, int32_t y_end,long color)
+{
+	while (y <= y_end && x <= x_end)
 	{
-		for (int32_t y = 0; y < image->height; ++y)
-		{
-			uint32_t	color = ft_pixel
-			(
-				rand() % 0xFF,
-				rand() % 0xFF,
-				rand() % 0xFF,
-				rand() % 0xFF
-			);
-			mlx_put_pixel(image, i, y, color);
-		}
+		ft_put_pixel(x, y, color);
+		y++;
+		x++;
 	}
+}
+void	ft_put_2d_matrix(long color)
+{
+	int32_t x = 0;
+	int32_t y = 0;
+	int32_t x_end = 256;
+	int32_t y_end = 256;
+	//long color = 0xFF00FFFF;
+//	int32_t offset = 20;
+//	int32_t row_start = 0;
+//	int32_t col_start = 0;
+//	v.row;
+//	v.col;
+//
+//	while (row_start <= v.row && col_start <= v.col)
+//	{
+//		ft_put_pixel(row_start * offset, col_start * offset, color);
+//		y++;
+//		x++;
+//	}
+	ft_put_line(x, y, x_end, y_end, color);
+}
+
+void	ft_randomize()
+{
+	int32_t x = 0;
+	int32_t y = 0;
+
+	int32_t x_end = 256;
+	int32_t y_end = 256;
+	long color = 0xFF00FFFF;
+	//ft_put_pixel(x, y, color);
+	ft_put_line(x, y, x_end, y_end, color);
+	ft_put_2d_matrix(color);
+
+//	mlx_put_pixel(image, x, y, 0xFF00FFFF);
+//
+//	for (int32_t i = 0; i < 1; ++i)
+//	{
+//		for (int32_t y = 0; y < 1; ++y)
+//		{
+//			mlx_put_pixel(image, i, y, 0xFF00FFFF);
+//		}
+//	}
 }
 
 void	ft_hook(void *param)
@@ -73,14 +104,12 @@ void	ft_hook(void *param)
 
 int32_t	init_mlx(mlx_t **mlx)
 {
-	t_window window;
-
 	if (!(*mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
 	{
 		puts(mlx_strerror(mlx_errno));
 		return (EXIT_FAILURE);
 	}
-	if (!(image = mlx_new_image(*mlx, 128, 128)))
+	if (!(image = mlx_new_image(*mlx, 512, 512)))
 	{
 		mlx_close_window(*mlx);
 		puts(mlx_strerror(mlx_errno));
@@ -111,7 +140,7 @@ int32_t	main(int32_t argc, const char *argv[])
 	v.col = 0;
 	v.buf = retrieve_buf(argv[1]);
 	v.matrix = str_to_matrix(v.buf, &v.row, &v.col);
-	print_matrix(v.matrix, &v.row, &v.col);
+	//print_matrix(v.matrix, &v.row, &v.col);
 	if (init_mlx(&mlx) != EXIT_SUCCESS)
 	{
 		return (EXIT_FAILURE);

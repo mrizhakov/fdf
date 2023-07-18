@@ -23,10 +23,10 @@
 
 typedef struct s_main
 {
-	int		row;
-	int		col;
-	char	*buf;
-	int		**matrix;
+	int32_t 		row;
+	int32_t 		col;
+	char			*buf;
+	int				**matrix;
 }t_main;
 
 typedef struct s_data
