@@ -1,0 +1,2125 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "fdf_colab"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/lbaron/core/fdf.colab/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/lbaron/core/fdf.colab/get_next_line"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lbaron/core/fdf.colab/libft"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/test"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest/internal"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/samples"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/test"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/glad"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/KHR"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/lodepng"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/MLX42"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/src/font"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/tests"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				193,
+				194,
+				200,
+				201,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				224,
+				225,
+				226
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/lbaron/core/fdf.colab/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/lbaron/core/fdf.colab/get_next_line"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lbaron/core/fdf.colab/libft"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googlemock/test"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest/internal"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/samples"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/build/_deps/googletest-src/googletest/test"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/glad"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/KHR"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/lodepng"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/include/MLX42"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/src/font"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/lbaron/core/fdf.colab/MLX42/tests"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				81,
+				82,
+				83,
+				108,
+				110,
+				111,
+				112,
+				114,
+				116,
+				117,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				221
+			]
+		}
+	],
+	"id" : "fdf_colab::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "fdf_colab",
+	"nameOnDisk" : "fdf_colab",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				81,
+				82,
+				83,
+				108,
+				110,
+				111,
+				112,
+				114,
+				116,
+				117,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				193,
+				194,
+				200,
+				201,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				224,
+				225,
+				226
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				68,
+				80,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				109,
+				113,
+				115,
+				118,
+				129,
+				155,
+				166,
+				192,
+				195,
+				196,
+				197,
+				198,
+				199,
+				202,
+				222,
+				223
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "get_next_line/get_next_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "get_next_line/get_next_line.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "get_next_line/get_next_line_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_atoi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_bzero.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_calloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_isalnum.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_isalpha.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_isascii.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_isdigit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_isprint.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_itoa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_memchr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_memcmp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_memcpy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_memmove.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_memset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_putchar_fd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_putendl_fd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_putnbr_fd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_putstr_fd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_split.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strchr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strdup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_striteri.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strjoin.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strlcat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strlcpy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strlen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strmapi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strncmp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strnstr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strrchr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strtrim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_substr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_tolower.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_toupper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libft/libft.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock-matchers.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-actions_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-cardinalities_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-function-mocker_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-internal-utils_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-arithmetic_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-comparisons_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-containers_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-misc_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers_test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-more-actions_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-nice-strict_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-port_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-pp-string_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-pp_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock-spec-builders_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_all_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_ex_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_leak_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_link2_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_link_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_link_test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_output_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_stress_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googlemock/test/gmock_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-spi.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/prime_tables.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample1.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample1.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample10_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample1_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample2.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample2_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample3-inl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample3_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample4.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample4.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample4_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample5_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample6_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample7_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample8_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/samples/sample9_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-assertion-result.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-death-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-filepath.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-internal-inl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-matchers.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-port.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-printers.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-test-part.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest-typed-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-break-on-failure-unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-catch-exceptions-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-color-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-death-test-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-death-test_ex_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-env-var-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-failfast-unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-filepath-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-filter-unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-global-environment-unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-list-tests-unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-listener-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-message-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-options-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-output-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name1-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name2-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test2-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-port-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-printers-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-setuptestsuite-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-shuffle-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-test-part-test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-throw-on-failure-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/googletest-uninitialized-test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test2_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test_test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest-unittest-api_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_all_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_assert_by_exception_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_dirs_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_environment_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_help_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_list_output_unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_main_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_no_test_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_pred_impl_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_premature_exit_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_prod_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_repeat_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_skip_in_environment_setup_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_skip_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_sole_header_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_stress_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_test_macro_stack_footprint_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_testbridge_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_throw_on_failure_ex_test.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_unittest.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_outfile1_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_outfile2_test_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_output_unittest_.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/production.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/build/_deps/googletest-src/googletest/test/production.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/build/mlx_frag_shader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/build/mlx_vert_shader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/include/glad/glad.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/include/KHR/khrplatform.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/include/lodepng/lodepng.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/include/MLX42/MLX42.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/include/MLX42/MLX42_Int.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/lib/glad/glad.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/lib/png/lodepng.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/src/font/font.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/font/mlx_font.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/textures/mlx_png.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/textures/mlx_texture.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/textures/mlx_xpm42.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/utils/mlx_compare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/utils/mlx_error.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/utils/mlx_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/utils/mlx_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_cursor.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_exit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_images.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_keys.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_loop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_monitor.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_mouse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_put_pixel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MLX42/src/mlx_window.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "MLX42/tests/tests.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MLX42/tests/WindowFixture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "fdf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "fdf_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "fdf_utils2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

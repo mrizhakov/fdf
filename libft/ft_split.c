@@ -13,79 +13,66 @@
 #include <stdlib.h>
 #include "libft.h"
 
-static void	free_memory(char **split, size_t word_count)
+typedef struct s_data
 {
-	size_t	i;
+	int		i;
+	int		j;
+	int		k;
+	int		wc;
+	char	**out;
+}t_data;
+
+static char	*ft_strncpy(char *s1, char *s2, int n)
+{
+	int	i;
 
 	i = -1;
-	while (++i <= word_count)
-		free(split[i]);
-	free(split);
+	while (++i < n && s2[i])
+		s1[i] = s2[i];
+	s1[i] = '\0';
+	return (s1);
 }
 
-static size_t	get_word_len(char const *s, char c)
+static int	word_count(char *str, char c)
 {
-	size_t	len;
+	t_data	v;
 
-	len = 0;
-	while (s[len] && s[len] != c)
-		len++;
-	return (len);
-}
-
-static void	go_to_next_word(char const **s, char c)
-{
-	while (**s && **s == c)
-		(*s)++;
-}
-
-static char	**split_s(char const *s, char c, size_t word_count)
-{
-	size_t	current_word;
-	size_t	word_len;
-	char	**split;
-
-	split = (char **) malloc((word_count + 1) * sizeof(char *));
-	if (!split)
-		return (NULL);
-	current_word = -1;
-	while (*s && ++current_word < word_count)
+	v.i = 0;
+	v.wc = 0;
+	while (str[v.i])
 	{
-		go_to_next_word(&s, c);
-		word_len = get_word_len(s, c);
-		split[current_word] = ft_substr(s, 0, word_len);
-		if (!split[current_word])
+		while (str[v.i] && str[v.i] == c)
+			v.i++;
+		if (str[v.i])
+			v.wc++;
+		while (str[v.i] && str[v.i] != c)
+			v.i++;
+	}
+	return (v.wc);
+}
+
+char	**ft_split(char *str, char c)
+{
+	t_data	v;
+
+	v.j = 0;
+	v.k = 0;
+	v.wc = word_count(str, c);
+	v.out = (char **)malloc(sizeof(char *) * (v.wc + 1));
+	v.i = 0;
+	while (str[v.i])
+	{
+		while (str[v.i] && str[v.i] == c)
+			v.i++;
+		v.j = v.i;
+		while (str[v.i] && str[v.i] != c)
+			v.i++;
+		if (v.i > v.j)
 		{
-			free_memory(split, word_count);
-			return (NULL);
+			v.out[v.k] = (char *)malloc(sizeof(char) * ((v.i - v.j) + 1));
+			ft_strncpy(v.out[v.k++], &str[v.j], v.i - v.j);
 		}
-		s += word_len;
 	}
-	split[word_count] = NULL;
-	return (split);
-}
-
-char	**ft_split(char const *s, char c)
-{
-	char		*s_trimmed;
-	char const	*ptr;
-	size_t		word_count;
-	char		**split;
-
-	if (!s)
-		return (NULL);
-	s_trimmed = ft_strtrim(s, &c);
-	if (!s_trimmed)
-		return (NULL);
-	ptr = s_trimmed;
-	word_count = 0;
-	while (*ptr)
-	{
-		go_to_next_word(&ptr, c);
-		ptr += get_word_len(ptr, c);
-		word_count++;
-	}
-	split = split_s(s_trimmed, c, word_count);
-	free(s_trimmed);
-	return (split);
+	v.out[v.k] = NULL;
+	return (v.out);
 }
