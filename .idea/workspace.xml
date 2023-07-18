@@ -20,9 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="322df18f-0320-4bb5-a035-cc719fec20b3" name="Changes" comment="added functions to measure the size of the map and malloc it as a 2d int array">
-      <change beforePath="$PROJECT_DIR$/.idea/fdf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fdf.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="322df18f-0320-4bb5-a035-cc719fec20b3" name="Changes" comment="Converted string to char ** to int **. Need to find memory leaks&#10;Update README&#10;test">
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdf.h" beforeDir="false" afterPath="$PROJECT_DIR$/fdf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +35,35 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="luiztest" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="luiztest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +90,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "luiz__branch",
+    "git-widget-placeholder": "luiztest2",
     "last_opened_file_path": "/home/lbaron/core/fdf.colab",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -71,6 +98,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "CMakeSettings",
+    "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,7 +133,7 @@
       <workItem from="1689523653083" duration="109000" />
       <workItem from="1689677964136" duration="703000" />
       <workItem from="1689679315439" duration="9271000" />
-      <workItem from="1689691004035" duration="6067000" />
+      <workItem from="1689691004035" duration="13008000" />
     </task>
     <task id="LOCAL-00001" summary="added functions to measure the size of the map and malloc it as a 2d int array">
       <created>1689347003568</created>
@@ -122,7 +150,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689696841829</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Converted string to char ** to int **. Need to find memory leaks&#10;Update README">
+      <option name="closed" value="true" />
+      <created>1689697402978</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689697402978</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Converted string to char ** to int **. Need to find memory leaks&#10;Update README&#10;test">
+      <option name="closed" value="true" />
+      <created>1689697552141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689697552141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +179,21 @@
     <isAutomaticFoundErrors value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="luiztest2" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -145,7 +204,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="luiz_branch" />
+                        <option value="luiztest2" />
                       </list>
                     </value>
                   </entry>
@@ -160,6 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added functions to measure the size of the map and malloc it" />
     <MESSAGE value="added functions to measure the size of the map and malloc it as a 2d int array" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functions to measure the size of the map and malloc it as a 2d int array" />
+    <MESSAGE value="Converted string to char ** to int **. Need to find memory leaks&#10;Update README" />
+    <MESSAGE value="Converted string to char ** to int **. Need to find memory leaks&#10;Update README&#10;test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Converted string to char ** to int **. Need to find memory leaks&#10;Update README&#10;test" />
   </component>
 </project>

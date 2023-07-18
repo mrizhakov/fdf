@@ -38,39 +38,57 @@ void	ft_put_line(int32_t x, int32_t y, int32_t x_end, int32_t y_end,long color)
 		x++;
 	}
 }
-void	ft_put_2d_matrix(long color)
+void	ft_put_2d_matrix(long color, void *param)
 {
-	int32_t x = 0;
-	int32_t y = 0;
-	int32_t x_end = 256;
-	int32_t y_end = 256;
-	//long color = 0xFF00FFFF;
-//	int32_t offset = 20;
-//	int32_t row_start = 0;
-//	int32_t col_start = 0;
-//	v.row;
-//	v.col;
-//
-//	while (row_start <= v.row && col_start <= v.col)
+//	int32_t x = 0;
+//	int32_t y = 0;
+//	int32_t x_end = 256;
+//	int32_t y_end = 256;
+	t_main *v = (t_main *)param;
+//	long color = 0xFF00FFFF;
+	int32_t offset = 20;
+	int32_t row_start = 0;
+	int32_t col_start = 0;
+
+	while (row_start <= v->row )
+	{
+		ft_put_line(row_start * offset, col_start * offset, v->row * offset, v->col * offset, color);
+		row_start++;
+	}
+//	while (row_start <= v->row)
 //	{
-//		ft_put_pixel(row_start * offset, col_start * offset, color);
-//		y++;
-//		x++;
+//		ft_put_line(col_start * offset, row_start <= v->row, row_start * offset,v->row * offset, color);
+//		row_start++;
 //	}
-	ft_put_line(x, y, x_end, y_end, color);
+
+
+//	ft_put_line(row_start * offset, col_start * offset, v->row * offset, v->col * offset, color);
+
+
+//	while (row_start <= v->row && col_start <= v->col)
+//	{
+////		ft_put_pixel(row_start * offset, col_start * offset, color);
+//		ft_put_line(row_start * offset, col_start * offset, v->row, v->col, color);
+//
+//		row_start++;
+//		col_start++;
+//	}
+//	ft_put_line(x, y, x_end, y_end, color);
 }
 
-void	ft_randomize()
+void	ft_randomize(void *param)
 {
 	int32_t x = 0;
 	int32_t y = 0;
+	t_main *v = param;
+
 
 	int32_t x_end = 256;
 	int32_t y_end = 256;
 	long color = 0xFF00FFFF;
 	//ft_put_pixel(x, y, color);
-	ft_put_line(x, y, x_end, y_end, color);
-	ft_put_2d_matrix(color);
+//	ft_put_line(x, y, x_end, y_end, color);
+	ft_put_2d_matrix(color, param);
 
 //	mlx_put_pixel(image, x, y, 0xFF00FFFF);
 //
@@ -102,7 +120,7 @@ void	ft_hook(void *param)
 
 //test
 
-int32_t	init_mlx(mlx_t **mlx)
+int32_t	init_mlx(mlx_t **mlx, t_main *v)
 {
 	if (!(*mlx = mlx_init(WIDTH, HEIGHT, "MLX42", true)))
 	{
@@ -121,7 +139,7 @@ int32_t	init_mlx(mlx_t **mlx)
 		puts(mlx_strerror(mlx_errno));
 		return (EXIT_FAILURE);
 	}
-	mlx_loop_hook(*mlx, ft_randomize, *mlx);
+	mlx_loop_hook(*mlx, ft_randomize, v);
 	mlx_loop_hook(*mlx, ft_hook, *mlx);
 	return (EXIT_SUCCESS);
 }
@@ -141,7 +159,7 @@ int32_t	main(int32_t argc, const char *argv[])
 	v.buf = retrieve_buf(argv[1]);
 	v.matrix = str_to_matrix(v.buf, &v.row, &v.col);
 	//print_matrix(v.matrix, &v.row, &v.col);
-	if (init_mlx(&mlx) != EXIT_SUCCESS)
+	if (init_mlx(&mlx, &v) != EXIT_SUCCESS)
 	{
 		return (EXIT_FAILURE);
 	}
