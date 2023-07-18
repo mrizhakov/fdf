@@ -21,137 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322df18f-0320-4bb5-a035-cc719fec20b3" name="Changes" comment="added functions to measure the size of the map and malloc it as a 2d int array">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-58ee76d8799e939b00cd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-85259698827c7024e66b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4681b461e94d96be6ec4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-07-18T14-42-41-0050.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-fdf_colab-Debug-71d7113f6188fbdb3822.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-ffb6434f9d66dd28afdb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/MLX42/build/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/MLX42/build/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/MLX42/build/_deps/googletest-src/googlemock/src/gmock-matchers.cc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/MLX42/build/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/get_next_line/get_next_line.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/get_next_line/get_next_line_utils.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_atoi.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_bzero.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_calloc.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_isalnum.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_isalpha.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_isascii.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_isdigit.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_isprint.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_itoa.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_memchr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_memcmp.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_memcpy.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_memmove.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_memset.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_putchar_fd.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_putendl_fd.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_putnbr_fd.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_putstr_fd.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_split.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strchr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strdup.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_striteri.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strjoin.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strlcat.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strlcpy.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strlen.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strmapi.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strncmp.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strnstr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strrchr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_strtrim.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_substr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_tolower.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_colab.dir/libft/ft_toupper.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fdf.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fdf_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fdf_utils2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/.idea/get_next_line.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/get_next_line.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/get_next_line.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/get_next_line_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/gnl.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/obj/get_next_line.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_next_line/obj/get_next_line_utils.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLX42" beforeDir="false" afterPath="$PROJECT_DIR$/MLX42" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_split.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_split.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strrchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strtrim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_bzero.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_calloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_calloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isalnum.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isalpha.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isascii.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isdigit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_isprint.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memmove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_memset.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putchar_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putendl_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putnbr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_putstr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_split.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_split.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strdup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_striteri.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strjoin.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strlcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strlcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strlcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strlen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strmapi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strncmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strnstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strrchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_strtrim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_substr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_substr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_tolower.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/obj/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/obj/ft_toupper.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fdf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fdf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +40,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -233,7 +105,7 @@
       <workItem from="1689523653083" duration="109000" />
       <workItem from="1689677964136" duration="703000" />
       <workItem from="1689679315439" duration="9271000" />
-      <workItem from="1689691004035" duration="5758000" />
+      <workItem from="1689691004035" duration="6067000" />
     </task>
     <task id="LOCAL-00001" summary="added functions to measure the size of the map and malloc it as a 2d int array">
       <created>1689347003568</created>
@@ -242,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689347003568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added functions to measure the size of the map and malloc it as a 2d int array">
+      <option name="closed" value="true" />
+      <created>1689696841828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689696841829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +133,29 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="luiz_branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added functions to measure the size of the map and malloc it" />
