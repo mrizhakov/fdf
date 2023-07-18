@@ -292,7 +292,7 @@ char	*retrieve_buf(const char *arg1)
 	return (buf2);
 }
 // -----------------------------------------------------------------------------
-
+//this is a test to see that we commit to test_2 branch
 int32_t	main(int32_t argc, const char* argv[])
 {
 	if(argc != 2)
@@ -361,3 +361,4 @@ int32_t	main(int32_t argc, const char* argv[])
 	free(buf);
 	return (EXIT_SUCCESS);
 }
+// checking out to test branch
