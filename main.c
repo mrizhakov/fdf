@@ -69,6 +69,8 @@ void	ft_hook(void *param)
 		image->instances[0].x += 5;
 }
 
+//test
+
 int32_t	init_mlx(mlx_t **mlx)
 {
 	t_window window;
