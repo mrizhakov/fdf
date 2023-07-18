@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MLX42" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MLX42/build/_deps/glfw-src" vcs="Git" />
   </component>
 </project>
