@@ -1,3 +1,0 @@
-/home/lbaron/core/fdf.colab/cmake-build-debug/CMakeFiles/fdf_colab.dir
-/home/lbaron/core/fdf.colab/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/lbaron/core/fdf.colab/cmake-build-debug/CMakeFiles/rebuild_cache.dir

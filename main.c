@@ -29,13 +29,32 @@ void	ft_put_pixel(int32_t x, int32_t y, long color)
 	mlx_put_pixel(image, x, y, color);
 }
 
-void	ft_put_line(int32_t x, int32_t y, int32_t x_end, int32_t y_end,long color)
+
+// works by putting either vertical or horizontal lines only. Commented part of the code only prints out the diagonal line.
+// Have to use https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm to print out lines in any angle
+void	ft_put_line(int32_t x, int32_t y, int32_t x_end, int32_t y_end, long color)
 {
 	while (y <= y_end && x <= x_end)
 	{
 		ft_put_pixel(x, y, color);
-		y++;
-		x++;
+//		x++;
+//		y++;
+
+		if (y == y_end && x <= x_end)
+		{
+			x++;
+		}
+		if (x == x_end && y <= y_end)
+		{
+			y++;
+		}
+//		else if (x <= x_end && y <= y_end)
+//		{
+//			x++;
+//			y++;
+//		}
+
+
 	}
 }
 void	ft_put_2d_matrix(long color, void *param)
@@ -50,11 +69,16 @@ void	ft_put_2d_matrix(long color, void *param)
 	int32_t row_start = 0;
 	int32_t col_start = 0;
 
-	while (row_start <= v->row )
-	{
-		ft_put_line(row_start * offset, col_start * offset, v->row * offset, v->col * offset, color);
-		row_start++;
-	}
+//	ft_put_line(row_start * offset, col_start * offset, v->row * offset, v->col * offset, color);
+
+	ft_put_line(0, 0, 0, 100, color);
+
+
+//	while (row_start <= v->row )
+//	{
+//		ft_put_line(row_start * offset, col_start * offset, v->row * offset, v->col * offset, color);
+//		row_start++;
+//	}
 //	while (row_start <= v->row)
 //	{
 //		ft_put_line(col_start * offset, row_start <= v->row, row_start * offset,v->row * offset, color);
