@@ -1,0 +1,256 @@
+cmake_minimum_required(VERSION 3.25)
+project(fdf_colab)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(get_next_line)
+include_directories(libft)
+include_directories(MLX42/build/_deps/googletest-src/googlemock/include)
+include_directories(MLX42/build/_deps/googletest-src/googlemock/include/gmock)
+include_directories(MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal)
+include_directories(MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom)
+include_directories(MLX42/build/_deps/googletest-src/googlemock/test)
+include_directories(MLX42/build/_deps/googletest-src/googletest/include)
+include_directories(MLX42/build/_deps/googletest-src/googletest/include/gtest)
+include_directories(MLX42/build/_deps/googletest-src/googletest/include/gtest/internal)
+include_directories(MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom)
+include_directories(MLX42/build/_deps/googletest-src/googletest/samples)
+include_directories(MLX42/build/_deps/googletest-src/googletest/src)
+include_directories(MLX42/build/_deps/googletest-src/googletest/test)
+include_directories(MLX42/include)
+include_directories(MLX42/include/glad)
+include_directories(MLX42/include/KHR)
+include_directories(MLX42/include/lodepng)
+include_directories(MLX42/include/MLX42)
+include_directories(MLX42/src/font)
+include_directories(MLX42/tests)
+
+add_executable(fdf_colab
+        get_next_line/get_next_line.c
+        get_next_line/get_next_line.h
+        get_next_line/get_next_line_utils.c
+        libft/ft_atoi.c
+        libft/ft_bzero.c
+        libft/ft_calloc.c
+        libft/ft_isalnum.c
+        libft/ft_isalpha.c
+        libft/ft_isascii.c
+        libft/ft_isdigit.c
+        libft/ft_isprint.c
+        libft/ft_itoa.c
+        libft/ft_memchr.c
+        libft/ft_memcmp.c
+        libft/ft_memcpy.c
+        libft/ft_memmove.c
+        libft/ft_memset.c
+        libft/ft_putchar_fd.c
+        libft/ft_putendl_fd.c
+        libft/ft_putnbr_fd.c
+        libft/ft_putstr_fd.c
+        libft/ft_split.c
+        libft/ft_strchr.c
+        libft/ft_strdup.c
+        libft/ft_striteri.c
+        libft/ft_strjoin.c
+        libft/ft_strlcat.c
+        libft/ft_strlcpy.c
+        libft/ft_strlen.c
+        libft/ft_strmapi.c
+        libft/ft_strncmp.c
+        libft/ft_strnstr.c
+        libft/ft_strrchr.c
+        libft/ft_strtrim.c
+        libft/ft_substr.c
+        libft/ft_tolower.c
+        libft/ft_toupper.c
+        libft/libft.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h
+        MLX42/build/_deps/googletest-src/googlemock/include/gmock/gmock.h
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock-all.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock-matchers.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock.cc
+        MLX42/build/_deps/googletest-src/googlemock/src/gmock_main.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-actions_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-cardinalities_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-function-mocker_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-internal-utils_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-arithmetic_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-comparisons_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-containers_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers-misc_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-matchers_test.h
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-more-actions_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-nice-strict_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-port_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-pp-string_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-pp_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock-spec-builders_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_all_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_ex_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_leak_test_.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_link2_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_link_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_link_test.h
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_output_test_.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_stress_test.cc
+        MLX42/build/_deps/googletest-src/googlemock/test/gmock_test.cc
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-spi.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h
+        MLX42/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+        MLX42/build/_deps/googletest-src/googletest/samples/prime_tables.h
+        MLX42/build/_deps/googletest-src/googletest/samples/sample1.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample1.h
+        MLX42/build/_deps/googletest-src/googletest/samples/sample10_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample1_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample2.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample2.h
+        MLX42/build/_deps/googletest-src/googletest/samples/sample2_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample3-inl.h
+        MLX42/build/_deps/googletest-src/googletest/samples/sample3_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample4.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample4.h
+        MLX42/build/_deps/googletest-src/googletest/samples/sample4_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample5_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample6_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample7_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample8_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/samples/sample9_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-all.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-assertion-result.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-death-test.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-filepath.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-internal-inl.h
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-matchers.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-port.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-printers.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-test-part.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest-typed-test.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest.cc
+        MLX42/build/_deps/googletest-src/googletest/src/gtest_main.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-break-on-failure-unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-catch-exceptions-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-color-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-death-test-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-death-test_ex_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-env-var-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-failfast-unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-filepath-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-filter-unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-global-environment-unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-list-tests-unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-listener-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-message-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-options-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-output-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name1-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name2-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test-test.h
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-param-test2-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-port-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-printers-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-setuptestsuite-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-shuffle-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-test-part-test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-throw-on-failure-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/googletest-uninitialized-test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test2_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest-typed-test_test.h
+        MLX42/build/_deps/googletest-src/googletest/test/gtest-unittest-api_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_all_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_assert_by_exception_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_dirs_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_environment_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_help_test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_list_output_unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_main_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_no_test_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_pred_impl_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_premature_exit_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_prod_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_repeat_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_skip_in_environment_setup_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_skip_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_sole_header_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_stress_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_test_macro_stack_footprint_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_testbridge_test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_throw_on_failure_ex_test.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_unittest.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_outfile1_test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_outfile2_test_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/gtest_xml_output_unittest_.cc
+        MLX42/build/_deps/googletest-src/googletest/test/production.cc
+        MLX42/build/_deps/googletest-src/googletest/test/production.h
+        MLX42/build/mlx_frag_shader.c
+        MLX42/build/mlx_vert_shader.c
+        MLX42/include/glad/glad.h
+        MLX42/include/KHR/khrplatform.h
+        MLX42/include/lodepng/lodepng.h
+        MLX42/include/MLX42/MLX42.h
+        MLX42/include/MLX42/MLX42_Int.h
+        MLX42/lib/glad/glad.c
+        MLX42/lib/png/lodepng.c
+        MLX42/src/font/font.h
+        MLX42/src/font/mlx_font.c
+        MLX42/src/textures/mlx_png.c
+        MLX42/src/textures/mlx_texture.c
+        MLX42/src/textures/mlx_xpm42.c
+        MLX42/src/utils/mlx_compare.c
+        MLX42/src/utils/mlx_error.c
+        MLX42/src/utils/mlx_list.c
+        MLX42/src/utils/mlx_utils.c
+        MLX42/src/mlx_cursor.c
+        MLX42/src/mlx_exit.c
+        MLX42/src/mlx_images.c
+        MLX42/src/mlx_init.c
+        MLX42/src/mlx_keys.c
+        MLX42/src/mlx_loop.c
+        MLX42/src/mlx_monitor.c
+        MLX42/src/mlx_mouse.c
+        MLX42/src/mlx_put_pixel.c
+        MLX42/src/mlx_window.c
+        MLX42/tests/tests.cpp
+        MLX42/tests/WindowFixture.hpp
+        fdf.h
+        fdf_utils.c
+        fdf_utils2.c
+        main.c)
